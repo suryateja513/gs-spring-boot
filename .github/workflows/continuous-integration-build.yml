@@ -39,12 +39,12 @@ jobs:
         shell: bash
 
       - name: "Setup GCP SDK"
-        uses: google-github-actions/setup-gcloud@v2
+        uses: "google-github-actions/setup-gcloud@v2"
 
       - name: "Configure Service Account"
-        uses: google-github-actions/auth@v2
+        uses: "google-github-actions/auth@v2"
         with:
-          credentials_json: ${{ secrets.SERVICE_ACCOUNT_CREDS }}
+          credentials_json: "${{ secrets.SERVICE_ACCOUNT_CREDS }}"
 
       - name: "Configure k8 component"
         run: |
@@ -80,7 +80,7 @@ jobs:
         run: |
           #!/bin/bash
           
-          kubectl apply -f deployment.yml --validate=false
+          kubectl apply -f deployment.yaml --validate=false
           kubectl rollout restart deployment
           
           shell: bash
