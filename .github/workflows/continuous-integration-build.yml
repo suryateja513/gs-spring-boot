@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     push:
       branches:
-        -main
+        -teja
 
 jobs:
   deploy-gs-spring-boot-suriya:
