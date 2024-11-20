@@ -36,7 +36,7 @@ jobs:
           #!/bin/bash
           
           docker build -t spring-boot .
-          shell: bash
+        shell: bash
 
       - name: "Setup GCP SDK"
         uses: google-github-actions/setup-gcloud@v2
