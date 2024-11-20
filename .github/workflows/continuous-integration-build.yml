@@ -20,7 +20,7 @@ jobs:
           java-version: "17"
 
       - name: "set up Maven"
-        uses: stCarlos/setup-maven@v5
+        uses: stCarolas/setup-maven@v5
         with:
           maven-version: 3.8.2
 
