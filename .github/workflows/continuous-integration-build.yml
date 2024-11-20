@@ -83,8 +83,8 @@ jobs:
           kubectl apply -f deployment-k8/deployment.yaml --validate=false
           kubectl rollout restart deployment
           
-          shell: bash
-          working-directory: deployment-k8
+        shell: bash
+        working-directory: deployment-k8
           
 
 
