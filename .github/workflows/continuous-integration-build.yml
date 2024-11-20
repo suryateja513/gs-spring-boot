@@ -44,7 +44,7 @@ jobs:
       - name: "Configure Service Account"
         uses: google-github-actions/auth@v2
         with:
-          credentials_json: "${{ secrets.SERVICE_ACCOUNT_CREDS }}"
+          credentials_json: ${{ secrets.SERVICE_ACCOUNT_CREDS }}
 
       - name: "Configure k8 component"
         run: |
