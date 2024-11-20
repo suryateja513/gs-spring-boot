@@ -80,7 +80,7 @@ jobs:
         run: |
           #!/bin/bash
           
-          kubectl apply -f deployment.yaml --validate=false
+          kubectl apply -f deployment-k8/deployment.yaml --validate=false
           kubectl rollout restart deployment
           
           shell: bash
