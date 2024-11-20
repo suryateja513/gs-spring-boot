@@ -20,9 +20,9 @@ jobs:
           java-version: "17"
 
       - name: "set up Maven"
-        uses: actions/setup-java@v4
+        uses: stCarlos/setup-mmaven@v5
         with:
-          maven-version: 4.0.0
+          maven-version: 3.8.2
 
       - name: "build jar with maven"
         run: |
